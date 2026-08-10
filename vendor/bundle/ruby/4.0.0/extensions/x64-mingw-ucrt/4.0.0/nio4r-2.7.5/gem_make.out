@@ -1,0 +1,22 @@
+current directory: C:/Users/antho/Documents/GitHub/onRails-mvc/vendor/bundle/ruby/4.0.0/gems/nio4r-2.7.5/ext/nio4r
+C:/Ruby40-x64/bin/ruby.exe extconf.rb
+
+current directory: C:/Users/antho/Documents/GitHub/onRails-mvc/vendor/bundle/ruby/4.0.0/gems/nio4r-2.7.5/ext/nio4r
+make DESTDIR\= sitearchdir\=./.gem.20260810-15980-iqlus3 sitelibdir\=./.gem.20260810-15980-iqlus3 clean
+make: aviso: jobserver indisponível: usando -j1. Inclua '+' na regra pai. 
+make: *** Sem regra para processar o alvo 'clean' .  Pare.
+
+current directory: C:/Users/antho/Documents/GitHub/onRails-mvc/vendor/bundle/ruby/4.0.0/gems/nio4r-2.7.5/ext/nio4r
+make DESTDIR\= sitearchdir\=./.gem.20260810-15980-iqlus3 sitelibdir\=./.gem.20260810-15980-iqlus3
+make: aviso: jobserver indisponível: usando -j1. Inclua '+' na regra pai. 
+make: Nada a ser feito para 'all'. 
+
+current directory: C:/Users/antho/Documents/GitHub/onRails-mvc/vendor/bundle/ruby/4.0.0/gems/nio4r-2.7.5/ext/nio4r
+make DESTDIR\= sitearchdir\=./.gem.20260810-15980-iqlus3 sitelibdir\=./.gem.20260810-15980-iqlus3 install
+make: aviso: jobserver indisponível: usando -j1. Inclua '+' na regra pai. 
+make: Nada a ser feito para 'install'. 
+
+current directory: C:/Users/antho/Documents/GitHub/onRails-mvc/vendor/bundle/ruby/4.0.0/gems/nio4r-2.7.5/ext/nio4r
+make DESTDIR\= sitearchdir\=./.gem.20260810-15980-iqlus3 sitelibdir\=./.gem.20260810-15980-iqlus3 clean
+make: aviso: jobserver indisponível: usando -j1. Inclua '+' na regra pai. 
+make: *** Sem regra para processar o alvo 'clean' .  Pare.
