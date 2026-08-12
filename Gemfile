@@ -64,3 +64,6 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
 end
+
+# Obrigatório para Ruby 4.0+ no Windows/Reline
+gem "fiddle"
