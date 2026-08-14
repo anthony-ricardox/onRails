@@ -67,3 +67,6 @@ end
 
 # Obrigatório para Ruby 4.0+ no Windows/Reline
 gem "fiddle"
+group :development, :test do
+  gem "byebug"
+end
