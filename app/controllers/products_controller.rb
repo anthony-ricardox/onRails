@@ -6,6 +6,11 @@ class ProductsController < ApplicationController
 
   def show; end
 
+  def new
+      byebug
+     @product = Product.new
+  end
+
   private
   def set_product
     @product = Product.find(params[:id])
