@@ -1,0 +1,23 @@
+current directory: C:/Users/antho/Documents/GitHub/onRails/Associations/vendor/bundle/ruby/4.0.0/gems/websocket-driver-0.8.2/ext/websocket-driver
+C:/Ruby40-x64/bin/ruby.exe extconf.rb
+creating Makefile
+
+current directory: C:/Users/antho/Documents/GitHub/onRails/Associations/vendor/bundle/ruby/4.0.0/gems/websocket-driver-0.8.2/ext/websocket-driver
+make DESTDIR\= sitearchdir\=./.gem.20260830-25300-xxqse9 sitelibdir\=./.gem.20260830-25300-xxqse9 clean
+make: aviso: jobserver indisponível: usando -j1. Inclua '+' na regra pai. 
+
+current directory: C:/Users/antho/Documents/GitHub/onRails/Associations/vendor/bundle/ruby/4.0.0/gems/websocket-driver-0.8.2/ext/websocket-driver
+make DESTDIR\= sitearchdir\=./.gem.20260830-25300-xxqse9 sitelibdir\=./.gem.20260830-25300-xxqse9
+make: aviso: jobserver indisponível: usando -j1. Inclua '+' na regra pai. 
+generating websocket_mask-x64-mingw-ucrt.def
+compiling websocket_mask.c
+linking shared-object websocket_mask.so
+
+current directory: C:/Users/antho/Documents/GitHub/onRails/Associations/vendor/bundle/ruby/4.0.0/gems/websocket-driver-0.8.2/ext/websocket-driver
+make DESTDIR\= sitearchdir\=./.gem.20260830-25300-xxqse9 sitelibdir\=./.gem.20260830-25300-xxqse9 install
+make: aviso: jobserver indisponível: usando -j1. Inclua '+' na regra pai. 
+/usr/bin/install -c -m 0755 websocket_mask.so ./.gem.20260830-25300-xxqse9
+
+current directory: C:/Users/antho/Documents/GitHub/onRails/Associations/vendor/bundle/ruby/4.0.0/gems/websocket-driver-0.8.2/ext/websocket-driver
+make DESTDIR\= sitearchdir\=./.gem.20260830-25300-xxqse9 sitelibdir\=./.gem.20260830-25300-xxqse9 clean
+make: aviso: jobserver indisponível: usando -j1. Inclua '+' na regra pai. 
