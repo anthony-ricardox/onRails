@@ -1,0 +1,17 @@
+
+    <%=link_to "criar produto", new_product_path %>
+
+    <% @products.each do |product|%>
+        <p> <%= product.name%> </p>
+        <p> <%= product.price%> </p>
+        <p> <%= product.quantidade%> </p>
+
+        <p> <%= link_to "ver produto", product%> </p>
+        <p> <%= link_to "editar produto", edit_product_path(product)%> </p>
+       
+       <p>
+          <%= button_to "apagar", product, method: :delete, form: { onclick: "return confirm('Você tem certeza que deseja apagar?');" } %>
+        </p>
+  
+
+    <%end%>

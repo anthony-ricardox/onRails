@@ -1,0 +1,24 @@
+current directory: C:/Users/antho/Documents/GitHub/onRails-mvc/vendor/bundle/ruby/4.0.0/gems/debug-1.11.1/ext/debug
+C:/Ruby40-x64/bin/ruby.exe extconf.rb
+creating Makefile
+
+current directory: C:/Users/antho/Documents/GitHub/onRails-mvc/vendor/bundle/ruby/4.0.0/gems/debug-1.11.1/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20260810-15980-inn66u sitelibdir\=./.gem.20260810-15980-inn66u clean
+make: aviso: jobserver indisponível: usando -j1. Inclua '+' na regra pai. 
+
+current directory: C:/Users/antho/Documents/GitHub/onRails-mvc/vendor/bundle/ruby/4.0.0/gems/debug-1.11.1/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20260810-15980-inn66u sitelibdir\=./.gem.20260810-15980-inn66u
+make: aviso: jobserver indisponível: usando -j1. Inclua '+' na regra pai. 
+generating debug-x64-mingw-ucrt.def
+compiling debug.c
+compiling iseq_collector.c
+linking shared-object debug/debug.so
+
+current directory: C:/Users/antho/Documents/GitHub/onRails-mvc/vendor/bundle/ruby/4.0.0/gems/debug-1.11.1/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20260810-15980-inn66u sitelibdir\=./.gem.20260810-15980-inn66u install
+make: aviso: jobserver indisponível: usando -j1. Inclua '+' na regra pai. 
+/usr/bin/install -c -m 0755 debug.so ./.gem.20260810-15980-inn66u/debug
+
+current directory: C:/Users/antho/Documents/GitHub/onRails-mvc/vendor/bundle/ruby/4.0.0/gems/debug-1.11.1/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20260810-15980-inn66u sitelibdir\=./.gem.20260810-15980-inn66u clean
+make: aviso: jobserver indisponível: usando -j1. Inclua '+' na regra pai. 
