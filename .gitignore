@@ -1,1 +1,16 @@
 vendor/bundle/
+# Gems instaladas localmente
+vendor/bundle/
+
+# Arquivos de ambiente/segredos
+.env
+.env.*
+*/config/master.key
+
+# Arquivos de sistema operacional
+.DS_Store
+Thumbs.db
+
+# Configuração de editor
+.vscode/
+.idea/
