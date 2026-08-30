@@ -1,4 +1,4 @@
-# -*- encoding: utf-8 -*-
+git push origin master# -*- encoding: utf-8 -*-
 # stub: zeitwerk 2.8.3 ruby lib
 
 Gem::Specification.new do |s|
