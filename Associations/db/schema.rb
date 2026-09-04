@@ -10,12 +10,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.1].define(version: 2026_09_02_145500) do
-  create_table "accounts", force: :cascade do |t|
-    t.integer "author_id", null: false
+ActiveRecord::Schema[8.1].define(version: 2026_09_04_011000) do
+  create_table "account_histories", force: :cascade do |t|
+    t.integer "account_id", null: false
     t.datetime "created_at", null: false
+    t.date "date"
     t.datetime "updated_at", null: false
-    t.index ["author_id"], name: "index_accounts_on_author_id"
+    t.index ["account_id"], name: "index_account_histories_on_account_id"
+  end
+
+  create_table "accounts", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.integer "number"
+    t.integer "supplier_id"
+    t.datetime "updated_at", null: false
+    t.index ["supplier_id"], name: "index_accounts_on_supplier_id"
   end
 
   create_table "appointments", force: :cascade do |t|
@@ -54,7 +63,14 @@ ActiveRecord::Schema[8.1].define(version: 2026_09_02_145500) do
     t.datetime "updated_at", null: false
   end
 
-  add_foreign_key "accounts", "authors"
+  create_table "suppliers", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.string "name"
+    t.datetime "updated_at", null: false
+  end
+
+  add_foreign_key "account_histories", "accounts"
+  add_foreign_key "accounts", "suppliers"
   add_foreign_key "appointments", "doctors"
   add_foreign_key "appointments", "patients"
   add_foreign_key "books", "authors"
