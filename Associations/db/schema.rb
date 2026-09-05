@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.1].define(version: 2026_09_05_021806) do
+ActiveRecord::Schema[8.1].define(version: 2026_09_05_175715) do
   create_table "account_histories", force: :cascade do |t|
     t.integer "account_id", null: false
     t.datetime "created_at", null: false
@@ -25,6 +25,15 @@ ActiveRecord::Schema[8.1].define(version: 2026_09_05_021806) do
     t.integer "supplier_id"
     t.datetime "updated_at", null: false
     t.index ["supplier_id"], name: "index_accounts_on_supplier_id"
+  end
+
+  create_table "addresses", force: :cascade do |t|
+    t.integer "addressable_id", null: false
+    t.string "addressable_type", null: false
+    t.datetime "created_at", null: false
+    t.string "street"
+    t.datetime "updated_at", null: false
+    t.index ["addressable_type", "addressable_id"], name: "index_addresses_on_addressable"
   end
 
   create_table "appointments", force: :cascade do |t|
@@ -51,7 +60,19 @@ ActiveRecord::Schema[8.1].define(version: 2026_09_05_021806) do
     t.index ["author_id"], name: "index_books_on_author_id"
   end
 
+  create_table "customers", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.string "name"
+    t.datetime "updated_at", null: false
+  end
+
   create_table "doctors", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.string "name"
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "empolyees", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.string "name"
     t.datetime "updated_at", null: false

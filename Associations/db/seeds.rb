@@ -28,5 +28,8 @@
 
 # AccountHistory.create(date: Date.today, account: a1)
 
-s1 = Student.create(name: "Diego")
-t1 = Teacher.create(name: "Thiago")
+# s1 = Student.create(name: "Diego")
+# t1 = Teacher.create(name: "Thiago")
+
+c1 = Customer.create(name: "Anthony")
+el = Empolyee.create(name: "Miller")
