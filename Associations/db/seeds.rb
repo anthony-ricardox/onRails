@@ -20,10 +20,13 @@
 # # Appointment.create(doctor: d1, patient: p2, date: Date.today)
 # # Appointment.create(doctor: d2, patient: p1, date: Date.today)
 
-s1 = Supplier.find_or_create_by!(name: "Diego")
-a1 = Account.find_or_create_by!(supplier: s1) do |account|
-	account.number = 144
-end
 
-AccountHistory.create(date: Date.today, account: a1)
+# s1 = Supplier.find_or_create_by!(name: "Diego")
+# a1 = Account.find_or_create_by!(supplier: s1) do |account|
+# 	account.number = 144
+# end
 
+# AccountHistory.create(date: Date.today, account: a1)
+
+s1 = Student.create(name: "Diego")
+t1 = Teacher.create(name: "Thiago")
