@@ -1,4 +1,4 @@
-vendor/bundle/
+**/vendor/bundle/
 # Gems instaladas localmente
 vendor/bundle/
 

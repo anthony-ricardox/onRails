@@ -1,31 +1,47 @@
-<%= form_with model: customer do |form| %>
-  <div>
-    <%= form.label :name, "Nome" %>
-    <%= form.text_field :name %>
-  </div>
-
-  <div>
-    <%= form.label :phone, "Telefone" %>
-    <%= form.text_field :phone %>
-  </div>
-
-  <%= form.fields_for :address do |address_form| %>
-    <fieldset>
-      <legend>Endereço</legend>
-      <div>
-        <%= address_form.label :street, "Rua" %>
-        <%= address_form.text_field :street %>
-      </div>
-      <div>
-        <%= address_form.label :number, "Número" %>
-        <%= address_form.text_field :number %>
-      </div>
-      <div>
-        <%= address_form.label :city, "Cidade" %>
-        <%= address_form.text_field :city %>
-      </div>
-    </fieldset>
+<%= form_with(model: customer) do |form| %>
+  <% if customer.errors.any? %>
+    <div style="color: #dc2626; background: #fee2e2; border: 1px solid #fca5a5; padding: 12px; border-radius: 6px; margin-bottom: 20px;">
+      <h2 style="font-size: 1rem; margin: 0 0 8px 0;"><%= pluralize(customer.errors.count, "erro") %> impediram este cliente de ser salvo:</h2>
+      <ul style="margin: 0; padding-left: 20px;">
+        <% customer.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
   <% end %>
 
-  <%= form.submit "Salvar" %>
+  <div class="field" style="margin-bottom: 16px;">
+    <%= form.label :name, "Nome", style: "display: block; font-weight: 600; margin-bottom: 4px;" %>
+    <%= form.text_field :name, class: "form-input" %>
+  </div>
+
+  <div class="field" style="margin-bottom: 16px;">
+    <%= form.label :phone, "Telefone", style: "display: block; font-weight: 600; margin-bottom: 4px;" %>
+    <%= form.text_field :phone, class: "form-input" %>
+  </div>
+
+  <fieldset style="border: 1px solid #e5e7eb; padding: 16px; border-radius: 8px; margin-bottom: 20px; background: #ffffff;">
+    <legend style="font-weight: 700; padding: 0 8px; color: #374151;">Endereço</legend>
+
+    <%= form.fields_for :address do |address_form| %>
+      <div class="field" style="margin-bottom: 12px;">
+        <%= address_form.label :street, "Rua", style: "display: block; font-weight: 500; margin-bottom: 4px;" %>
+        <%= address_form.text_field :street, class: "form-input" %>
+      </div>
+
+      <div class="field" style="margin-bottom: 12px;">
+        <%= address_form.label :number, "Número", style: "display: block; font-weight: 500; margin-bottom: 4px;" %>
+        <%= address_form.text_field :number, class: "form-input" %>
+      </div>
+
+      <div class="field" style="margin-bottom: 12px;">
+        <%= address_form.label :city, "Cidade", style: "display: block; font-weight: 500; margin-bottom: 4px;" %>
+        <%= address_form.text_field :city, class: "form-input" %>
+      </div>
+    <% end %>
+  </fieldset>
+
+  <div class="actions">
+    <%= form.submit "Salvar Cliente", class: "btn-primary" %>
+  </div>
 <% end %>
