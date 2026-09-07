@@ -1,0 +1,24 @@
+<h1>Clientes</h1>
+
+<%= link_to "Adicionar Cliente", new_customer_path %>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nome</th>
+      <th>Telefone</th>
+      <th>Endereço</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @customers.each do |customer| %>
+      <tr>
+        <td><%= customer.name %></td>
+        <td><%= customer.phone %></td>
+        <td><%= customer.address&.street %>, <%= customer.address&.number %> - <%= customer.address&.city %></td>
+        <td><%= link_to "Editar", edit_customer_path(customer) %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
