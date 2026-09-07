@@ -1,0 +1,31 @@
+<%= form_with model: customer do |form| %>
+  <div>
+    <%= form.label :name, "Nome" %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div>
+    <%= form.label :phone, "Telefone" %>
+    <%= form.text_field :phone %>
+  </div>
+
+  <%= form.fields_for :address do |address_form| %>
+    <fieldset>
+      <legend>Endereço</legend>
+      <div>
+        <%= address_form.label :street, "Rua" %>
+        <%= address_form.text_field :street %>
+      </div>
+      <div>
+        <%= address_form.label :number, "Número" %>
+        <%= address_form.text_field :number %>
+      </div>
+      <div>
+        <%= address_form.label :city, "Cidade" %>
+        <%= address_form.text_field :city %>
+      </div>
+    </fieldset>
+  <% end %>
+
+  <%= form.submit "Salvar" %>
+<% end %>
